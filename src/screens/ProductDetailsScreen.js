@@ -9,12 +9,12 @@ import {
   Pressable,
 } from "react-native";
 import React from "react";
-import products from "../data/products";
-
+// import products from "../data/products";
+import { useSelector, useDispatch } from "react-redux";
 const ProductDetailsScreen = () => {
   const { width } = useWindowDimensions();
-  const product = products[0];
 
+  const product = useSelector((state) => state.products.selectedProduct);
   const addToCart = () => {
     console.warn("ADDED TO CART");
   };

@@ -16,7 +16,7 @@ const ShoppingCartTotals = () => {
       </View>
       <View style={styles.row}>
         <Text style={styles.textBold}>Total</Text>
-        <Text style={styles.textBold}>420,00 US$</Text>
+        <Text style={styles.textBold}>000,00 US$</Text>
       </View>
     </View>
   );
